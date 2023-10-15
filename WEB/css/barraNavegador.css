@@ -1,0 +1,209 @@
+
+
+#botontop a {
+  
+ 
+  font-family: 'Montserrat', sans-serif;
+  color: #f6f4ec ;
+  font-display: none;
+  text-decoration: none;
+  background-color: #4483ab !important;
+     
+  }
+
+
+@media screen and (min-width: 560px) {
+
+.flex-todo {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #4483ab !important;
+    width: 100%;
+    
+    
+    
+    
+  }
+  
+  /*  da error */ 
+   /* 
+  .flex-mitad {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    background-color: #4483ab !important;
+    justify-content: space-around;
+    order: 1;
+    
+        
+  }
+  */ 
+  
+/* esto es la caja de botones*/ 
+  .flex-menu {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    
+    background-color:   #4483ab !important;
+    color: #f6f4ec !important;
+    text-decoration: none;
+    
+
+    
+  }
+/* estos son botones*/ 
+  .flex-items {
+
+    display: flex;    
+    outline: 0 !important;
+    border: 0 !important;
+    
+   
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: medium;
+    padding: 0.8em 0.5em ;
+    color: #f6f4ec !important;
+    text-decoration: none;
+    background-color: #4483ab !important;
+    
+    
+  }
+
+
+ 
+.flex-items:hover {
+  background-color:   #4483ab !important;
+  transform: translateY(-3px);
+  
+
+    }
+
+    /* la marca*/ 
+#imagen {
+  padding: 10px 0px;
+  width: 100px;
+  height:50px;
+  background-color:   #4484ab !important;
+  
+  
+  
+}
+
+
+/* hamburguesa desactivado para el modo grande*/ 
+#hamburguesa {
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+/* modo pequeño para celu*/ 
+
+@media screen and (max-width: 560px) {
+  
+  .flex-todo {
+    display: none;   
+
+}
+
+#hamburguesa {
+   
+   
+    
+  background-color: #4483ab !important;
+    border-radius: 3px;
+    
+}
+
+/*accion del menu */
+  
+.menulista{
+  display: none;
+}
+input:checked  ~ ul{
+  display:block;
+  
+}
+input {
+  display: none;
+}
+/*fin de accion del menu*/
+
+/*caracteristidas del boton del menu hamburguesa*/
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1.5px solid #f6f4ec !important;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #f6f4ec !important;
+  text-align: center;
+  user-select: none;
+  background-color: #4483ab !important;
+}
+label:hover{
+  background: #92c9e5 !important;
+  cursor: pointer;
+}
+
+/*caracteristicas del menu hamburguesa*/
+nav {
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #4483ab !important;
+  }
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+  background-color: #4483ab !important;
+  
+}
+
+nav li a {
+  
+  display: block;
+  text-decoration: none;
+  padding: 0.4em 1em; 
+  font-family: 'Montserrat', sans-serif;
+  color:#f6f4ec !important;
+  transition: all ease-in-out 0.3s;
+  background-color: #4483ab !important;
+  
+  
+ 
+}
+
+nav li a:hover {
+  background-color: #92c9e5!important;
+  color:#f6f4ec !important;
+  transform: translateY(-2px);
+
+
+}
+
+
+
+
+
+
+}

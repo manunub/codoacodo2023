@@ -1,0 +1,222 @@
+/*el maquetado de esta pagina en particular faq*/
+
+body {  
+      
+       
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.1fr 0.1fr 0.1fr 1.0fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+         "Barra-Navegador"
+         "wrapped"
+         "espaciado"       
+         "total-footer";
+        
+      }
+    
+  
+
+
+.Barra-Navegador{
+
+  grid-area: Barra-Navegador;
+
+}
+
+
+/*este es un div quue da un poco de aire*/
+.espaciado{
+  padding: 11vw;
+  display: none;
+ 
+
+  grid-area: espaciado;
+  
+  
+}
+/*este es un div quue da un poco de aire*/
+.espaciado2{
+  display: none;
+  
+
+  
+  grid-area: espaciado2;
+  
+  
+}
+
+.total-footer{
+
+  
+  grid-area: total-footer;
+  margin-top: auto;
+  
+  
+}
+
+
+
+
+
+/*fin del maquetado*/
+
+
+.wrapped{
+
+
+max-width: 80%;
+font-family: 'Montserrat', sans-serif;
+    
+margin: auto;
+box-sizing: border-box;
+grid-area: wrapped;
+    
+}
+
+/* solo el primer p y h1*/
+.wrapped > p,
+.wrapped > h1 {
+    
+    margin: 2rem 0px ;
+    text-align: center;
+ 
+}
+
+.wrapped > h1 {
+    
+    letter-spacing: 2px;
+ 
+}
+/*Botones*/
+
+/*Formtato de la caja para hubicar el icono y el texto en posicion*/
+summary {
+    
+    align-items: center;
+    padding: 1.5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: 0.2s ease;
+    background-color: rgb(233, 242, 248);
+    cursor: pointer;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary {
+    border-bottom: 2px solid #aaa;
+    margin-bottom: 0.5em;
+    
+
+    
+    
+    
+}
+/* solo el i cuando se abre el boton para girar el boton*/
+details[open] summary i{
+    
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+
+    
+    
+    
+}
+  
+
+details[open] div{
+    padding: 0.7em 1em;
+    
+    
+    
+        
+  }
+
+
+
+
+
+
+.acordeon{
+    box-sizing: border-box;
+    
+
+    /*Colores del fondo y el texto*/
+
+    background-color: rgb(230, 230, 230);
+    color:rgb(0, 174, 255);
+    font-weight: bold;
+    font-size: large;
+   
+
+       
+
+    /* Tamaño de la caja borde del boton*/
+    width: 100%;
+    padding: .5rem .5rem;
+    border: none;
+    outline: none;
+
+    /*Movimiento, no va mas se modifica con el q quedo arriba de todo*/
+    /*transition: 0.4s;*/
+
+    
+
+    
+}
+
+/*esto solo modifica el tamaño del i o sea el iconito de la flechita */
+.acordeon i {
+    font-size: 1.6rem;
+
+}
+/* cuando paso por encima del area del boton*/
+
+summary:hover {
+    background-color: bisque;
+}
+
+/* el panel con las respuestas que no se ve porque tienen display none */
+.panel {
+
+    padding: 0px 15px;
+    background-color: blueviolet;
+    
+    background-color: rgb(160, 145, 173);
+    padding: 1rem 2rem 2rem 2.5rem  ;
+}
+
+/* parrafo de respuesta */
+.panel p {
+    color: brown;
+    font-size: 1rem;
+    line-height: 1.4;
+
+}
+/* borde de la caja */
+.faq {
+
+    border: 1px solid rgba(35, 35, 36, 0.219);
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width : 350px) and (min-width : 60px) {
+
+  body{
+
+    display: inline;
+  }
+  .espaciado{
+    padding: 11vw;
+    display: inline;
+  }
+
+}

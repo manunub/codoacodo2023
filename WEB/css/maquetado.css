@@ -1,0 +1,56 @@
+
+/* este maquetado  hay que cambiarlo dependiendo la pagina e incluirlo en el css de la misma*/
+
+body {
+
+    
+   
+    
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows:  1fr 1fr 1fr 1fr;
+       gap: 0px 0px;
+       grid-auto-flow: row;
+       grid-template-areas:
+         "Barra-Navegador"
+         "espaciado" 
+         "espaciado2"
+         "total-footer";
+       
+     }
+   
+   
+   .Barra-Navegador{
+   
+     grid-area: Barra-Navegador;
+   
+   }
+   
+   
+   /*este es un div quue da un poco de aire*/
+   .espaciado{
+     
+    
+   
+     grid-area: espaciado;
+     
+     
+   }
+   /*este es un div quue da un poco de aire*/
+   .espaciado2{
+     
+   
+     
+     grid-area: espaciado2;
+     
+     
+   }
+   
+   .total-footer{
+   
+     
+     grid-area: total-footer;
+     margin-top: auto;
+     
+     
+   }
