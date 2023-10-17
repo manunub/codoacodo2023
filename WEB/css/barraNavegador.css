@@ -1,5 +1,4 @@
 
-
 #botontop a {
   
  
@@ -15,7 +14,6 @@
 @media screen and (min-width: 560px) {
 
 .flex-todo {
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -24,11 +22,7 @@
     align-content: center;
     background-color: #4483ab !important;
     width: 100%;
-    
-    
-    
-    
-  }
+}
   
   /*  da error */ 
    /* 
@@ -74,18 +68,15 @@
     color: #f6f4ec !important;
     text-decoration: none;
     background-color: #4483ab !important;
-    
-    
-  }
+}
 
 
  
 .flex-items:hover {
   background-color:   #4483ab !important;
   transform: translateY(-3px);
-  
-
-    }
+  transition: .5s;
+  }
 
     /* la marca*/ 
 #imagen {
@@ -118,7 +109,6 @@
   
   .flex-todo {
     display: none;   
-
 }
 
 #hamburguesa {
@@ -135,17 +125,17 @@
 .menulista{
   display: none;
 }
-input:checked  ~ ul{
+nav input:checked  ~ ul{
   display:block;
   
 }
-input {
+nav input {
   display: none;
 }
 /*fin de accion del menu*/
 
 /*caracteristidas del boton del menu hamburguesa*/
-label {
+nav label {
   box-sizing: border-box;
   display: inline-block;
   border: 1.5px solid #f6f4ec !important;
@@ -159,7 +149,7 @@ label {
   user-select: none;
   background-color: #4483ab !important;
 }
-label:hover{
+nav label:hover{
   background: #92c9e5 !important;
   cursor: pointer;
 }

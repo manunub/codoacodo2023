@@ -11,25 +11,26 @@
     <title>Preguntas frecuentes</title>
     
     
-    <link rel="stylesheet" href="/css/barraNavegador.css">
-    <link rel="stylesheet" href="/css/footer.css"> 
+    <link rel="stylesheet" href="./css/barraNavegador.css">
+    <link rel="stylesheet" href="./css/footer.css"> 
      <!-- Esto css da formato a todas las paginas por lo que va siempre en todas--->
-    <link rel="stylesheet" href="/css/formatoPagina.css"> 
+    <link rel="stylesheet" href="./css/formatoPagina.css"> 
      <!-- Esto es el css de ejemplo base para trabajar cada una de las subpaginas--->
-    <link rel="stylesheet" href="/css/maquetado.css">
-
-    <link rel="icon" type="image/x-icon" href="/img/favicon32x32.png">
-    
+    <link rel="stylesheet" href="./css/maquetado.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon32x32.png">
+   
     
 </head>
 <body>
+  <div class="contenedorCuerpo">
   <div class="maquetado">
 
     <!-- Esto es el nav --->
     <div class="Barra-Navegador">
         <div class="flex-todo">
           <div class="flex-mitad">
-            <div class="imagen"> <a href="index.html"><img src="/img/logitoGrande.png" alt="LogoTurismoMarca" id="imagen"> </a></div>
+            <div class="imagen"> <a href="index.html"><img src="./img/logitoGrande.png" alt="LogoTurismoMarca" id="imagen"> </a></div>
             </div>
             
             <div class="flex-mitad">
@@ -54,7 +55,7 @@
               <li><a href="FAQ.html">FAQ</a></li>
               <li><a href="destinos.html">Destinos</a></li>
               <li><a href="acerca.html">Quienes somos</a></li>
-              <li><a href="contacto.html">Cont&aacute;ctanos</a></li>
+              <li><a href="./contacto.html">Cont&aacute;ctanos</a></li>
             </ul>
             
           </nav>
@@ -63,28 +64,26 @@
       </div>
       <!-- fin del nav --->
 
-    <!-- Aca se puede trabajar --->
-
-
-    
-    
-   
-  
-
-        
-
+    <!-- inicio carrusel --->
       
-    
+    <main>  
+      <div id="carrusel-contenido">
+        <div id="carrusel-caja">
+            <div class="carrusel-elemento">
+                <img class="imagenes" src="img/sun-2359649_1280.png" >
+                
+            </div>
+            <div class="carrusel-elemento">   
+                <img class="imagenes" src="img/argentina2.png">
+            </div>
+            <div class="carrusel-elemento">   
+                <img class="imagenes" src="img/Argentina-Turismo-1.png">                        
+            </div>
+        </div>
+      </div>
 
-
-
-    <!--Darle aire a la pagina con espaciado-->
-    <div class="espaciado"><h1>hola1</h1></div>
-    <div class="espaciado2"><h1>hola2</h1></div>
-    
-
-
-
+<!--fin del carrusel-->
+<a href="https://api.whatsapp.com/send?phone=541167391172"  target="_blank"><img src="img/logowhats.jpg" alt="whatsapp" class="ico-whatsapp"></a>
 
     <!-- Esto es todo lo de la pagina sobre footer --->
     <div class="total-footer">
@@ -225,5 +224,6 @@
 
 
   </div>
+</div>
 </body>
 </html>

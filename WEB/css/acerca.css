@@ -1,10 +1,6 @@
 /*el maquetado de esta pagina en particular acerca*/
 
 body {
-
-    
-   
-    
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  0.1fr 0.1fr 0.1fr 0.1fr;
@@ -16,7 +12,6 @@ body {
     "sobreNos2"       
     "espaciado"
     "total-footer";
-  
 }
 .espaciado{
   padding: 5vw;
