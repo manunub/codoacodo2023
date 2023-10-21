@@ -1,0 +1,742 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.contenedorCuerpo{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+ 
+ 
+}
+
+h2 {
+ text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(5, 81, 180, 1) ; 
+  animation-duration: 2s;
+  font-size: xx-large;
+  padding: 1vw;
+
+}
+
+h4 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+.galeria{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content:center
+  width: 50%;
+  height: auto;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  background-size: cover;
+   }
+.textogaleria{
+   
+    color: white;
+    font-size: 60px;
+}
+.imagengaleria{
+    width: 60%;
+    height: 90%;
+    border-radius: 5%;
+    position: relative;
+    color: black;
+    opacity: 1;
+    transition: 0.5s; 
+    transition-timing-function: cubic-bezier(.83, .93, 0, .99);
+   
+    
+}
+.imagengaleria:hover{
+   transform: scale(1.5);
+    opacity: 1;
+    z-index: 100;
+}
+
+
+.videoheader{
+  width: auto;
+  height: 25%;
+  z-index: -2000;
+ 
+}
+#imagenheader{
+  width: auto;
+  height:15vw ;
+  padding-left: 10%;
+  }
+
+  #botontop a {
+  
+ 
+    font-family: 'Montserrat', sans-serif;
+    color: #f6f4ec ;
+    font-display: none;
+    text-decoration: none;
+    background-color: #4483ab !important;
+       
+    }
+  
+  
+  @media screen and (min-width: 560px) {
+  
+  .flex-todo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      background-color: #4483ab !important;
+      width: 100%;
+  }
+    
+  
+  /* esto es la caja de botones*/ 
+    .flex-menu {
+      
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      
+      background-color:   #4483ab !important;
+      color: #f6f4ec !important;
+      text-decoration: none;
+      
+  
+      
+    }
+  /* estos son botones*/ 
+    .flex-items {
+  
+      display: flex;    
+      outline: 0 !important;
+      border: 0 !important;
+      
+     
+      transition: all ease-in-out 0.3s;
+      cursor: pointer;
+      font-size: medium;
+      padding: 0.8em 0.5em ;
+      color: #f6f4ec !important;
+      text-decoration: none;
+      background-color: #4483ab !important;
+  }
+  
+  
+   
+  .flex-items:hover {
+    background-color:   #4483ab !important;
+    transform: translateY(-3px);
+    transition: .5s;
+    }
+  
+      /* la marca*/ 
+  #imagen {
+    padding: 10px 0px;
+    width: 100px;
+    height:50px;
+    background-color:   #4484ab !important;
+    
+  }
+  
+  
+  /* hamburguesa desactivado para el modo grande*/ 
+  #hamburguesa {
+    display: none;
+  }
+  
+  }
+  
+  
+  /* modo pequeño para celu*/ 
+  
+  @media screen and (max-width: 560px) {
+    
+    .flex-todo {
+      display: none;   
+  }
+  
+  #hamburguesa {
+
+    background-color: #4483ab !important;
+      border-radius: 3px;
+      
+  }
+  
+  /*accion del menu */
+    
+  .menulista{
+    display: none;
+  }
+  nav input:checked  ~ ul{
+    display:block;
+    
+  }
+  nav input {
+    display: none;
+  }
+  /*fin de accion del menu*/
+  
+  /*caracteristidas del boton del menu hamburguesa*/
+  nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1.5px solid #f6f4ec !important;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #f6f4ec !important;
+    text-align: center;
+    user-select: none;
+    background-color: #4483ab !important;
+  }
+  nav label:hover{
+    background: #92c9e5 !important;
+    cursor: pointer;
+  }
+  
+  /*caracteristicas del menu hamburguesa*/
+  nav {
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4483ab !important;
+    }
+  
+  nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    background-color: #4483ab !important;
+    
+  }
+  
+  nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.4em 1em; 
+    font-family: 'Montserrat', sans-serif;
+    color:#f6f4ec !important;
+    transition: all ease-in-out 0.3s;
+    background-color: #4483ab !important;
+    
+  }
+  
+  nav li a:hover {
+    background-color: #92c9e5!important;
+    color:#f6f4ec !important;
+    transform: translateY(-2px);
+  
+  
+  }
+  
+  
+  }
+
+.contenedorCard{
+    
+   width: 100%; 
+   height: 20vw;
+   display: grid;
+    grid-template-columns: 31% 31% 31%;
+   background-color:rgba(5, 81, 180, 1);
+
+   background-image:
+   linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+   url(path/to/image);
+ background-size: cover;
+
+}
+.card {
+    width: 96%;
+    height: auto;
+    margin: 2%;
+    margin-left:10%;
+    
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color:#a6851e ;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24em;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color:#f2ce5c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+        transform: rotateY(180deg);
+  }
+  
+  .imagencard{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  #fotoPlaya{
+    height: 90%;
+  }
+
+  #fotoCiudad{
+    height: 90%;
+  }
+
+
+/* Estilo del mapa */
+
+.mapa{
+  display: flex;
+  place-content: center center;
+  margin: 10% 20%;
+  width: 60%;
+  height: 90%;
+
+}
+
+.mapa path {
+  fill: rgb(95, 155, 233);
+  stroke: #f2ce5c;
+  stroke-width: 2px;
+  transition: 0.5s; 
+  transition-timing-function: cubic-bezier(.83, .93, 0, .99);
+ 
+}
+
+.mapa :hover{
+  fill:rgba(46, 64, 166, 1);
+  
+}
+
+.mapa :hover a {
+  color: aqua;
+  background-color: black;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(5, 81, 180, 1) ; 
+  font-size:x-large;
+  text-align: center;
+  font-weight: lighter;
+  padding: 4%;
+  background-color:rgb(232, 241, 253);
+  margin: 5%;
+ 
+  
+}
+
+.menu-item-linksito {
+  color: #f6f4ec !important;
+  text-decoration: none;
+  
+  list-style: none;
+}
+
+.footer-logo-link{
+  color: #f6f4ec;
+  text-decoration: none;
+  list-style: none;
+  
+  
+}
+.total-footer {
+  font-family: 'Montserrat', sans-serif;
+   
+  
+  
+}
+
+
+.footer {
+    background-color: #4483ab!important;
+    color: #f6f4ec !important;
+    border-radius: 10px;
+       
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 350px;
+    position: relative;
+    
+}
+
+/* las columnas */
+.footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    
+    padding-left: 12vw;
+    padding-right: 15px;
+    width: 100%;
+    color: #f6f4ec;
+    
+}
+
+.footer-content-column ul li a {
+  color: #f6f4ec;
+  text-decoration: none;
+  
+}
+
+.footer-logo-link {
+    display: inline-block;
+    
+}
+.footer-menu {
+    margin-top: 3px;
+    list-style: none;
+}
+.footer-menu-no-necesarios {
+  
+  display: none;
+  margin-top: 30px;
+  
+}
+ 
+.footer-menu-name {
+
+    color: #f6f4ec;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 9pt;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+
+.footer-menu-list {
+    list-style: none;
+    margin-bottom: 10;
+    margin-top: 10px;
+    padding-left: 10;
+}
+
+/*las cosas del indice*/
+.footer-menu-list li {
+  
+    margin-top: 5px;
+    list-style: none;
+    margin: 0px 0px 10px 0px;
+    
+    
+}
+
+.footer-call-to-action-description {
+    color: #f6f4ec;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.footer-call-to-action-button:hover {
+    background-color: #92c9e5;
+    color:  #f6f4ec;
+    
+}
+.button:last-of-type {
+    margin-right: 0;
+    
+}
+.footer-call-to-action-button {
+    background-color: #4daac2;
+    border-radius: 21px;
+    color: #f6f4ec;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+.footer-call-to-action {
+    margin-top: 30px;
+    
+}
+.footer-call-to-action-title {
+    color: #f6f4ec;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    
+}
+.footer-call-to-action-link-wrapper {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #f6f4ec;
+    text-decoration: none;
+    
+}
+.footer-call-to-action-link-wrapper a {
+    color: #f6f4ec;
+    text-decoration: none;
+ 
+}
+
+
+/* removi los social icons porque al final no los usamos */
+.footer-social-links {
+  display: none;
+
+    bottom: 0;
+    height: 0px;
+    position: absolute ;
+    right: 0;
+    width: 236px;
+}
+   
+
+.footer-social-link {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    
+}
+
+.hidden-link-text {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    top: 50%;
+    
+}
+
+
+/* la barra de mas de abajo del copyright */
+
+.footer-copyright {
+    background-color:  #759cc3;
+    color: #f6f4ec;
+    padding: 15px 30px;
+  text-align: center;
+}
+
+.footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footer-copyright-text {
+  color: #f6f4ec;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-copyright-link {
+    color: #f6f4ec;
+    text-decoration: none;
+}
+
+/* Aca estan cambiando los formatos. Hay varios que se superponen pero igual funciona */
+@media (max-width:320px)   { 
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 30px 1px 600px;
+    position: relative;
+  }
+
+}
+
+@media (min-width:320px) and (max-width:479px)  { 
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 550px;
+    position: relative;
+  }
+}
+@media (min-width:480px) and (max-width:599px)  { 
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 350px;
+    position: relative;
+  }
+}
+@media (min-width:600px) and (max-width: 800px)  { 
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 350px;
+    position: relative;
+  }
+
+  
+}
+
+@media (min-width: 760px) {
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 350px;
+      position: relative;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content:center;
+  
+  }
+
+
+.tiempo {
+  margin-left: 5%;
+  margin-top: 10%;
+}
+}
+@media (min-width: 568px) {
+   .footer-content-column {
+      width: 49.99%;
+  } 
+
+}
+@media (max-width: 568px) and (min-width: 320px){
+
+  .footer-content-column {
+    width: 100%;
+  
+  
+} 
+
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+  padding: 40px 15px 550px;
+  position: relative;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content:center;
+}
+
+.card-back {
+  background-color:#f2ce5c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 50%;
+  font-family: 'Montserrat', sans-serif;
+      transform: rotateY(180deg);
+}
+
+.tiempo {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+}
+}
+
+.ico-whatsapp{
+  width: 3%;
+  height: auto;
+  position: fixed;
+  z-index: 200;
+  background: rgb(7, 0, 0);
+  right: 10px;
+  bottom: 10px;
+  border-radius: 35px;
+  box-shadow: 2px 2px black;
+}
+
+.volver {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgba(5, 81, 180, 1) ; 
+  margin: 2%;
+ 
+}
+
+.volver :hover {
+  padding: 2%;
+  background-color:rgb(232, 241, 253);
+ 
+}
