@@ -7,6 +7,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 100%;
+  background-color: #f6f4ec !important;
  
  
 }
@@ -30,14 +31,14 @@ h4 {
 .galeria{
   display: grid;
   grid-template-columns: 50% 50%;
-  justify-content:center
+  justify-content:center;
   width: 50%;
   height: auto;
   padding-top: 10%;
   padding-left: 10%;
   padding-bottom: 10%;
   background-size: cover;
-   }
+  }
 .textogaleria{
    
     color: white;

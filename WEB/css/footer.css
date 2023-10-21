@@ -74,12 +74,13 @@
     
 }
    
-  
+  /*INDICE palabra*/
   .footer-menu-name {
 
       color: #f6f4ec;
       list-style: none;
       font-size: 15px;
+      margin: 0px;
       font-weight: 9pt;
       letter-spacing: .1em;
       line-height: 18px;
@@ -105,10 +106,12 @@
       margin: 0px 0px 10px 0px;
       
       
+      
   }
   
   .footer-call-to-action-description {
       color: #f6f4ec;
+      
       margin-top: 10px;
       margin-bottom: 20px;
       
@@ -117,12 +120,15 @@
       background-color: #92c9e5;
       color:  #f6f4ec;
       
+      
   }
   .button:last-of-type {
       margin-right: 0;
       
+      
   }
   .footer-call-to-action-button {
+    
       background-color: #4daac2;
       border-radius: 21px;
       color: #f6f4ec;
@@ -143,8 +149,12 @@
       margin-top: 30px;
       
   }
+
+  /* Subtitulos cantactenos y tambien por telefono*/
   .footer-call-to-action-title {
+    
       color: #f6f4ec;
+      margin: 0px;
       font-size: 14px;
       font-weight: 900;
       letter-spacing: .1em;
